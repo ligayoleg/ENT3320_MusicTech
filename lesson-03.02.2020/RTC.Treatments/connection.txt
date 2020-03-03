@@ -1,0 +1,5 @@
+rtinput("AUDIO")
+
+modulator = makeconnection("inlet", 1, 378.0)
+
+AM(0.0, 0.0, dur=9999, 1.0, modulator)

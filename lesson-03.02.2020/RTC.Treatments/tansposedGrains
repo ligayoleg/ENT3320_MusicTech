@@ -1,0 +1,19 @@
+
+
+rtinput("AUDIO")
+
+amp = 1.0
+ampenv = maketable("line", 1000, 0,0, 5,1, 50, 0)
+
+basedur = 0.32
+outsk = 0.0
+
+for(int i = 0; i < 300; i = i + 1){
+	insk = irand( 0.0, 2.8)
+	transp = irand(-0.11, 0.11)
+	dur = translen(basedur, transp)
+	TRANS(outs, insk, dur, amp * ampenv, transp, 0, random())
+	TRANS(outs, insk, dur, amp * ampenv, transp, 1, random())
+	outsk = outsk + irand(0.08, 0.16)
+}
+
