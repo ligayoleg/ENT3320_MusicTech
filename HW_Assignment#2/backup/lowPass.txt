@@ -1,0 +1,6 @@
+rtinput("AUDIO")
+
+REVERBIT(outskip=0.0, inskip=0.0, dur=9999, amp=1.0, revtime=2.6, revpct=0.4, rtchandel=0.02, cutoff=5000.0)
+
+MOOGVCF(outsk=0.0, insk=0.0, dur=3.0, amp=2.0, inputchan=0, pan=1.0, bypass=0, filterfreqtable=1000.0, filtresontable=0.3)
+MOOGVCF(outsk=0.0, insk=0.0, dur=3.0, amp=2.0, inputchan=1, pan=0.0, bypass=0, filterfreqtable=800.0, filtresontable=0.8)
